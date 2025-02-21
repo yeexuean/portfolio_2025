@@ -6,4 +6,8 @@
   --color-border-light: #81ffa3;
   --color-border-dark: #0a1f01;
   --color-bg: #111111;
+
+  /*text*/
+  --font-serif: "Inria Sans", serif;
+  --font-sans-serif: "Inter", sans-serif;
 }
