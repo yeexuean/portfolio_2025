@@ -1,0 +1,52 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  color: var(--color-text);
+  font-style: italic;
+  font-size: 5rem;
+}
+
+h1 span {
+  font-family: var(--font-sans-serif);
+  font-style: normal;
+}
+
+.about {
+  margin: 3rem 25rem;
+  margin-bottom: 20rem;
+  font-family: var(--font-sans-serif);
+  font-size: 1.5rem;
+  color: var(--color-text);
+  line-height: 3rem;
+  text-align: center;
+}
+
+.blur {
+  position: absolute;
+  width: 55vw;
+  height: 60vw;
+  min-width: 300px;
+  min-height: 350px;
+  top: 1600px;
+  left: -15vw;
+  border-radius: 700px;
+  background: linear-gradient(
+    rgba(15, 56, 30, 0.2) 10%,
+    rgba(var(--color-border-dark), 0.4) 100%
+  );
+  filter: blur(300px);
+  z-index: 0;
+}

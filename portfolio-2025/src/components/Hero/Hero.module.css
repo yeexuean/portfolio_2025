@@ -29,6 +29,7 @@
   gap: 1rem; /*space between the text and mouse*/
 }
 .scrollText {
+  font-family: var(--font-sans-serif);
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-text);
@@ -105,4 +106,8 @@
   );
   filter: blur(150px);
   z-index: 0;
+}
+@media screen and (max-width: 768px);
+.profile-pic {
+  width: 30%;
 }
