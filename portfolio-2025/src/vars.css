@@ -3,11 +3,11 @@
   --color-text: #ffffff;
   --color-primary: #6bdc40;
   --color-light: 207, 245, 216;
-  --color-border-light: #81ffa3;
+  --color-border-light: 129, 255, 163;
   --color-border-dark: 10, 31, 1;
   --color-bg: #111111;
 
   /*text*/
-  --font-serif: "Inria Sans", serif;
   --font-sans-serif: "Inter", sans-serif;
+  --font-serif: "Inria Sans", serif;
 }

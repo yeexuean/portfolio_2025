@@ -11,7 +11,7 @@ export const Skills = () => {
 
       <div className={styles.skillJob}>
         {/* graphic design */}
-        <div className={styles.graphicDesign}>
+        <div className={styles.skills}>
           <h3>Graphic Design</h3>
           <ul className={styles.skillJobList}>
             <li>
@@ -49,7 +49,7 @@ export const Skills = () => {
         </div>
 
         {/* web development */}
-        <div className={styles.webDevelopment}>
+        <div className={styles.skills}>
           <h3>Web Development</h3>
           <ul className={styles.skillJobList}>
             <li>
@@ -87,7 +87,7 @@ export const Skills = () => {
         </div>
 
         {/* ui/ux */}
-        <div className={styles.uiux}>
+        <div className={styles.skills}>
           <h3>UI/UX</h3>
           <ul className={styles.skillJobList}>
             <li>
