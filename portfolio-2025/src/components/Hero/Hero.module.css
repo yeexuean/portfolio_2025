@@ -11,15 +11,11 @@
   text-align: center;
 }
 
-.profile-pic {
-  width: 30%;
+.profilePic {
+  width: 20%;
   object-fit: cover;
   border-radius: 350px;
   margin-bottom: 2rem;
-}
-
-.content {
-  text-align: center;
 }
 
 .scrollContainer {
@@ -107,7 +103,8 @@
   filter: blur(150px);
   z-index: 0;
 }
-@media screen and (max-width: 768px);
-.profile-pic {
-  width: 30%;
+@media screen and (max-width: 768px) {
+  .profilePic {
+    width: 35%;
+  }
 }

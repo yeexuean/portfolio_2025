@@ -4,16 +4,16 @@ import styles from "./Skills.module.css";
 
 export const Skills = () => {
   return (
-    <section>
+    <section className={styles.container}>
       <h1>
         my! <span>skills</span>
       </h1>
 
-      <div>
+      <div className={styles.skillJob}>
         {/* graphic design */}
-        <div>
+        <div className={styles.graphicDesign}>
           <h3>Graphic Design</h3>
-          <ul>
+          <ul className={styles.skillJobList}>
             <li>
               <img
                 src={getImageUrl("skills/arrow.png")}
@@ -49,9 +49,9 @@ export const Skills = () => {
         </div>
 
         {/* web development */}
-        <div>
+        <div className={styles.webDevelopment}>
           <h3>Web Development</h3>
-          <ul>
+          <ul className={styles.skillJobList}>
             <li>
               <img
                 src={getImageUrl("skills/arrow.png")}
@@ -87,9 +87,9 @@ export const Skills = () => {
         </div>
 
         {/* ui/ux */}
-        <div>
+        <div className={styles.uiux}>
           <h3>UI/UX</h3>
-          <ul>
+          <ul className={styles.skillJobList}>
             <li>
               <img
                 src={getImageUrl("skills/arrow.png")}
@@ -125,8 +125,8 @@ export const Skills = () => {
         </div>
       </div>
 
-      <div>
-        <ul>
+      <div className={styles.skillApp}>
+        <ul className={styles.skillAppList}>
           <li>
             <button>
               <img src={getImageUrl("skills/html-logo.png")} />
