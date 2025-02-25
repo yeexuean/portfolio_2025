@@ -128,63 +128,63 @@ export const Skills = () => {
       <div className={styles.skillApp}>
         <ul className={styles.skillAppList}>
           <li>
-            <button>
+            <button className={styles.listButton}>
               <img src={getImageUrl("skills/html-logo.png")} />
             </button>
             <p>HTML</p>
           </li>
 
           <li>
-            <button>
+            <button className={styles.listButton}>
               <img src={getImageUrl("skills/css-logo.png")} />
             </button>
             <p>CSS</p>
           </li>
 
           <li>
-            <button>
+            <button className={styles.listButton}>
               <img src={getImageUrl("skills/js-logo.png")} />
             </button>
             <p>JavaScript</p>
           </li>
 
           <li>
-            <button>
+            <button className={styles.listButton}>
               <img src={getImageUrl("skills/react-logo.png")} />
             </button>
             <p>React</p>
           </li>
 
           <li>
-            <button>
+            <button className={styles.listButton}>
               <img src={getImageUrl("skills/figma-logo.png")} />
             </button>
             <p>Figma</p>
           </li>
 
           <li>
-            <button>
+            <button className={styles.listButton}>
               <img src={getImageUrl("skills/ai-logo.png")} />
             </button>
             <p>Illustrator</p>
           </li>
 
           <li>
-            <button>
+            <button className={styles.listButton}>
               <img src={getImageUrl("skills/ps-logo.png")} />
             </button>
             <p>Photoshop</p>
           </li>
 
           <li>
-            <button>
+            <button className={styles.listButton}>
               <img src={getImageUrl("skills/ae-logo.png")} />
             </button>
             <p>After Effects</p>
           </li>
 
           <li>
-            <button>
+            <button className={styles.listButton}>
               <img src={getImageUrl("skills/html-logo.png")} />
             </button>
             <p>InDesign</p>
