@@ -5,7 +5,8 @@
   --color-light: 207, 245, 216;
   --color-border-light: 129, 255, 163;
   --color-border-dark: 10, 31, 1;
-  --color-bg: #111111;
+  --color-bg: 17, 17, 17;
+  --color-midgreen: 60, 170, 89;
 
   /*text*/
   --font-sans-serif: "Inter", sans-serif;

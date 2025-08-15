@@ -1,0 +1,115 @@
+@import "../../vars.css";
+
+.projectPanel {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+        140deg,
+        rgba(var(--color-midgreen), 1) -30%,
+        rgba(var(--color-border-dark), 1) 60%
+      )
+      padding-box,
+    linear-gradient(
+        130deg,
+        rgba(var(--color-border-light), 1) 0%,
+        rgba(var(--color-border-dark), 1) 100%
+      )
+      border-box;
+  transition: transform 0.2s ease-in-out;
+}
+
+.projectPanel:hover {
+  transform: translateY(-5px);
+}
+
+.panelImageContainer {
+  width: 100%;
+  overflow: hidden;
+  /* height: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panelImage {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.panelContent {
+  padding: 0rem 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.panelContent p {
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.panelContent .projectTitle {
+  font-family: var(--font-sans-serif);
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+}
+
+.projectSkills {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.projectSkills li {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: white;
+  background: linear-gradient(
+        rgba(38, 38, 38, 0.9) 0%,
+        rgba(var(--color-bg)) 100%
+      )
+      padding-box,
+    linear-gradient(
+        130deg,
+        rgba(var(--color-midgreen), 0.5) 0%,
+        rgba(var(--color-bg), 1) 100%
+      )
+      border-box;
+
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.panelLink {
+  font-family: var(--font-sans-serif);
+  font-style: normal;
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  color: white;
+  text-decoration: none;
+  text-align: start;
+  border-radius: 5px;
+  font-size: 0.9em;
+  background-color: rgba(100, 100, 100, 0.1);
+}
+
+.panelLink:hover {
+  background-color: rgba(100, 100, 100, 0.4);
+}

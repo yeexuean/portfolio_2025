@@ -3,6 +3,7 @@
 .container {
   display: flex;
   justify-content: center;
+  padding: 2rem;
 }
 
 .content {
@@ -28,7 +29,7 @@
   margin: 3rem 25rem;
   margin-bottom: 20rem;
   font-family: var(--font-sans-serif);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-text);
   line-height: 3rem;
   text-align: center;

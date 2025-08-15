@@ -1,0 +1,64 @@
+@import "../../vars.css";
+
+.projectSection h1 {
+  font-size: 3.5rem;
+  color: var(--color-text);
+  font-style: italic;
+  left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.projectSection h1 span {
+  font-family: var(--font-sans-serif);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.projectSection {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.projectSection h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.title {
+  color: black;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px; /* space between grid items */
+  max-width: 1200px; /* limit overall width */
+  margin: 0 auto; /* center the grid */
+}
+
+.githubLink {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: linear-gradient(
+        rgba(38, 38, 38, 0.9) 0%,
+        rgba(var(--color-bg)) 100%
+      )
+      padding-box,
+    linear-gradient(
+        130deg,
+        rgba(var(--color-midgreen), 0.5) 0%,
+        rgba(var(--color-bg), 1) 100%
+      )
+      border-box;
+  color: white;
+  font-family: var(--font-sans-serif);
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease-in-out;
+}
+
+.githubLink:hover {
+  transform: translateY(-5px);
+}

@@ -17,6 +17,7 @@
   font-weight: 700;
   text-decoration: none;
   color: var(--color-text);
+  cursor: pointer;
 }
 
 .menuBtn {

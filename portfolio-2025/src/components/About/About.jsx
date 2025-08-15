@@ -5,7 +5,7 @@ export const About = () => {
     <section className={styles.container}>
       <div className={styles.content}>
         <h1>
-          hello! <span>I'm Yee Xuean</span>
+          hello! <span>I&apos;m Yee Xuean</span>
         </h1>
         <p className={styles.about}>
           I am a second year student studying Interactive Media and Web
