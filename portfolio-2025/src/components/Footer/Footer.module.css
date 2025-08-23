@@ -1,0 +1,155 @@
+@import "../../vars.css";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  background-color: var((--color-mediumgreen), 100);
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer h1 {
+  font-size: 3.5rem;
+  color: var(--color-text);
+  font-style: italic;
+  left: 0;
+  margin: 2rem 0;
+  margin-bottom: 4rem;
+}
+
+.footer h1 span {
+  font-family: var(--font-sans-serif);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin-left: 15rem;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.contactText {
+  color: var(--color-text);
+  font-family: var(--font-sans-serif);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/*start of footer right*/
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 5rem;
+}
+
+.footerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  width: 50%;
+  min-width: 380px;
+  height: 570px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background: linear-gradient(
+        140deg,
+        rgba(var(--color-midgreen), 0.6) -30%,
+        rgba(var(--color-border-dark), 0.9) 60%
+      )
+      padding-box,
+    linear-gradient(
+        130deg,
+        rgba(var(--color-border-light), 1) 0%,
+        rgba(var(--color-border-dark), 1) 100%
+      )
+      border-box;
+}
+
+.footerForm h3 {
+  font-family: var(--font-sans-serif);
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.footerFormRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.footerFormRow h4 {
+  color: white;
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+}
+
+.footerFormRow input,
+.footerFormRow textarea {
+  background-color: rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  min-width: 300px;
+  caret-color: rgba(255, 255, 255, 0.6);
+}
+
+.footerFormRow input::placeholder,
+.footerFormRow textarea::placeholder {
+  color: var(--color-text);
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.footerFormRow input:focus,
+.footerFormRow textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(var(--color-midgreen), 0.6);
+}
+
+.footerFormRow textarea {
+  resize: none;
+}
+
+.footerForm button {
+  padding: 0.8rem 1rem;
+  min-width: 300px;
+  background: linear-gradient(
+        rgba(38, 38, 38, 0.9) 0%,
+        rgba(var(--color-bg)) 100%
+      )
+      padding-box,
+    linear-gradient(
+        130deg,
+        rgba(var(--color-midgreen), 0.5) 0%,
+        rgba(var(--color-bg), 1) 100%
+      )
+      border-box;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: white;
+  font-family: var(--font-sans-serif);
+}
