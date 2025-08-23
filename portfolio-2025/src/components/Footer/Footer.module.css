@@ -6,7 +6,7 @@
   align-items: center;
   padding: 2rem;
   padding-bottom: 5rem;
-  background-color: var((--color-mediumgreen), 100);
+  background-color: rgba(var(--color-mediumgreen), 0.3);
 }
 
 .footerContainer {
@@ -38,6 +38,13 @@
   margin-left: 15rem;
 }
 
+.footerLeft h3 {
+  color: white;
+  font-family: var(--font-sans-serif);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
 .contactRow {
   display: flex;
   align-items: center;
@@ -49,7 +56,8 @@
   color: var(--color-text);
   font-family: var(--font-sans-serif);
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 /*start of footer right*/
@@ -67,8 +75,8 @@
   background-color: #fff;
   padding: 2rem;
   width: 50%;
-  min-width: 380px;
-  height: 570px;
+  min-width: 450px;
+  height: 578px;
   border-radius: 8px;
   border: 2px solid transparent;
   background: linear-gradient(
@@ -108,13 +116,24 @@
 
 .footerFormRow input,
 .footerFormRow textarea {
-  background-color: rgba(0, 0, 0, 0.15);
-  border: none;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%)
+      padding-box,
+    linear-gradient(
+        130deg,
+        rgba(var(--color-midgreen), 0.5) 0%,
+        rgba(var(--color-bg), 1) 100%
+      )
+      border-box;
+  border: 2px solid transparent;
   border-radius: 6px;
   padding: 1rem;
   width: 100%;
-  min-width: 300px;
+  min-width: 390px;
   caret-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  font-size: 1rem;
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
 }
 
 .footerFormRow input::placeholder,
@@ -122,12 +141,17 @@
   color: var(--color-text);
   opacity: 0.5;
   font-size: 0.8rem;
+  font-family: var(--font-sans-serif);
+}
+
+.footerFormRow input::placeholder,
+.footerFormRow textarea::placeholder {
+  color: var(--color-text);
 }
 
 .footerFormRow input:focus,
 .footerFormRow textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(var(--color-midgreen), 0.6);
 }
 
 .footerFormRow textarea {
@@ -136,7 +160,7 @@
 
 .footerForm button {
   padding: 0.8rem 1rem;
-  min-width: 300px;
+  min-width: 390px;
   background: linear-gradient(
         rgba(38, 38, 38, 0.9) 0%,
         rgba(var(--color-bg)) 100%

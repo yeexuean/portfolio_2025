@@ -23,6 +23,7 @@ export const Footer = () => {
       <div className={styles.footerContainer}>
         <div className={styles.footerLeft}>
           <h3>contact information</h3>
+
           <ContactDetails
             icon="footer/emailIcon.svg"
             text="yeexuean0502@gmail.com"
@@ -32,7 +33,11 @@ export const Footer = () => {
         </div>
 
         <div className={styles.footerRight}>
-          <form className={styles.footerForm}>
+          <form
+            className={styles.footerForm}
+            action="https://formspree.io/f/movlgrwn"
+            method="POST"
+          >
             <h3>send a message!</h3>
             <div className={styles.footerFormRow}>
               <h4>your name</h4>
@@ -58,7 +63,7 @@ export const Footer = () => {
               <h4>your message</h4>
               <textarea
                 name="message"
-                placeholder="hello, i'd like to talk about"
+                placeholder="hello, i'd like to talk about..."
                 rows="4"
                 required
               />
