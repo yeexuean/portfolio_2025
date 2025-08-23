@@ -5,16 +5,20 @@ import { About } from "./components/About/About";
 import { Skills } from "./components/Skills/Skills";
 import { Project } from "./components/Project/Project";
 import { Footer } from "./components/Footer/Footer";
+import { BackgroundBlobs } from "./components/BackgroundBlobs/BackgroundBlobs";
 
 function App() {
   return (
     <div className={styles.App}>
-      <Navbar />;
-      <Hero />
-      <About />
-      <Skills />
-      <Project />
-      <Footer />
+      <BackgroundBlobs />
+      <div className={styles.appContent}>
+        <Navbar />;
+        <Hero />
+        <About />
+        <Skills />
+        <Project />
+        <Footer />
+      </div>
     </div>
   );
 }

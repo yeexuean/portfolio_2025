@@ -16,9 +16,6 @@ export const Hero = () => {
           <p className={styles.scrollText}>Scroll</p>
           <div className={styles.mouseAnimation}></div>
         </div>
-
-        <div className={styles.topBlur} />
-        <div className={styles.bottomBlur} />
       </div>
     </section>
   );

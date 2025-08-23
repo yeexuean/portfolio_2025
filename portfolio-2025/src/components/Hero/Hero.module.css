@@ -8,6 +8,8 @@
 }
 
 .content {
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
 
@@ -70,39 +72,6 @@
   }
 }
 
-.topBlur {
-  position: absolute;
-  width: 55vw;
-  height: 60vw;
-  min-width: 300px;
-  min-height: 350px;
-  top: -350px;
-  left: -15vw;
-  border-radius: 700px;
-  background: linear-gradient(
-    rgba(15, 56, 30, 0.2) 10%,
-    rgba(var(--color-border-dark), 0.4) 100%
-  );
-  filter: blur(300px);
-  z-index: 0;
-}
-
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 300px;
-  min-height: 250px;
-  top: 600px;
-  right: -25vw;
-  border-radius: 760px;
-  background: linear-gradient(
-    rgba(15, 56, 30, 0.2) 10%,
-    rgba(var(--color-border-dark), 0.4) 100%
-  );
-  filter: blur(150px);
-  z-index: 0;
-}
 @media screen and (max-width: 768px) {
   .profilePic {
     width: 35%;

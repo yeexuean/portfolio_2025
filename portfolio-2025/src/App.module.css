@@ -2,7 +2,13 @@
 
 .App {
   background-color: rgb(var(--color-bg));
+  position: relative;
   width: 100%;
-  min-height: 100dvh;
-  overflow-x: clip;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.appContent {
+  position: relative;
+  z-index: 1;
 }

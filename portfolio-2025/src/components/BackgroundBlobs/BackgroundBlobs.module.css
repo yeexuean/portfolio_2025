@@ -1,0 +1,43 @@
+@import "../../vars.css";
+
+.bgBlobs {
+  position: fixed;
+  inset: 0;
+  overflow: clip;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.topBlur {
+  position: absolute;
+  width: 55vw;
+  height: 60vw;
+  min-width: 300px;
+  min-height: 350px;
+  transform: translate(-15vw, -350px);
+  border-radius: 700px;
+  background: linear-gradient(
+    rgba(15, 56, 30, 0.2) 10%,
+    rgba(var(--color-border-dark), 0.4) 100%
+  );
+  filter: blur(300px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 300px;
+  min-height: 250px;
+  top: 600px;
+  right: 0;
+  transform: translate(25vw, 200px);
+  border-radius: 760px;
+  background: linear-gradient(
+    rgba(15, 56, 30, 0.2) 10%,
+    rgba(var(--color-border-dark), 0.4) 100%
+  );
+  filter: blur(150px);
+  z-index: 0;
+}
