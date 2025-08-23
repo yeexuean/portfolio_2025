@@ -16,7 +16,7 @@ const ContactDetails = ({ iconPath, text }) => (
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contact">
       <h1>
         let&apos;s! <span>connect</span>
       </h1>

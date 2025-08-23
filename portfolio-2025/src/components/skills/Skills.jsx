@@ -4,7 +4,7 @@ import { skillIcons, skillSections } from "../../data/skills";
 
 export const Skills = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="myskills">
       <h1>
         my! <span>skills</span>
       </h1>

@@ -46,7 +46,7 @@ export const Project = () => {
     },
   ];
   return (
-    <section id="projects" className={styles.projectSection}>
+    <section id="mywork" className={styles.projectSection}>
       <h1>
         my! <span>work</span>
       </h1>
