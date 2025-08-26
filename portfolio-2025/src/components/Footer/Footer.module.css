@@ -176,4 +176,5 @@
   border-radius: 6px;
   color: white;
   font-family: var(--font-sans-serif);
+  cursor: pointer;
 }
