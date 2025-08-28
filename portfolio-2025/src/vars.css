@@ -1,7 +1,7 @@
 :root {
   /*colours*/
   --color-text: #ffffff;
-  --color-primary: #6bdc40;
+  --color-primary: 107, 220, 64;
   --color-light: 207, 245, 216;
   --color-border-light: 129, 255, 163;
   --color-border-dark: 10, 31, 1;

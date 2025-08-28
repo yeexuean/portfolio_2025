@@ -2,10 +2,19 @@
 
 .projectSection h1 {
   font-size: 3.5rem;
-  color: var(--color-text);
+  /* color: var(--color-text); */
   font-style: italic;
   left: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-light)),
+    rgb(var(--color-primary))
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .projectSection h1 span {
@@ -61,4 +70,21 @@
 
 .githubLink:hover {
   transform: translateY(-5px);
+}
+@media screen and (max-width: 1024px) {
+  .projectGrid {
+    gap: 20px;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .projectSection h1 {
+    font-size: 2.5rem;
+  }
+
+  .projectGrid {
+    gap: 20px;
+    padding: 0 0rem;
+  }
 }

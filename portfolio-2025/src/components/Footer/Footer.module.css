@@ -17,11 +17,20 @@
 
 .footer h1 {
   font-size: 3.5rem;
-  color: var(--color-text);
   font-style: italic;
   left: 0;
   margin: 2rem 0;
   margin-bottom: 4rem;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-light)),
+    rgb(var(--color-primary))
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
 }
 
 .footer h1 span {
@@ -177,4 +186,7 @@
   color: white;
   font-family: var(--font-sans-serif);
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
 }

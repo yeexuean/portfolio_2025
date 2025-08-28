@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
@@ -17,9 +16,17 @@
   font-size: 3.5rem;
   color: var(--color-text);
   font-style: italic;
-  /* position: absolute; */
   left: 0;
   margin-bottom: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-light)),
+    rgb(var(--color-primary))
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .container h1 span {
@@ -29,11 +36,12 @@
 }
 
 .skillJob {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
   justify-content: center;
-  width: 90%;
+  width: 100%;
   gap: 4rem;
-  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .skills {
@@ -56,13 +64,12 @@
       )
       border-box;
   backdrop-filter: blur(200px);
-  /* filter: blur(1px); */
-  border-radius: 20px;
+  border-radius: 1.5rem;
   border: 2px solid transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  width: 25%;
-  min-height: 400px;
+  width: 400px;
+  min-height: 480px;
   box-sizing: border-box;
   margin-bottom: 2.5rem;
 }
@@ -74,10 +81,10 @@
   font-family: var(--font-sans-serif);
   color: var(--color-text);
   font-size: 1.5rem;
-  width: 100%;
 }
 
 .skillJobList {
+  list-style: none;
   line-height: 1.6rem;
   padding: 1rem 1rem;
   width: 100%;
@@ -87,21 +94,18 @@
 }
 
 .skillJobList li {
-  list-style: none;
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
+  gap: 1rem;
   font-family: var(--font-sans-serif);
   color: var(--color-text);
-  gap: 1rem;
 }
 
 .skillJobList li img {
   width: 15px;
   height: 15px;
   flex: 0 0 15px;
-  align-self: flex-start;
-  margin-top: 0.2em;
+  align-self: center;
 }
 
 .skillAppList {
@@ -154,4 +158,113 @@
   color: var(--color-text);
   font-family: var(--font-sans-serif);
   font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  /* .skillJob {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 1rem;
+    width: 90%;
+
+  }
+
+  .skillJobList {
+    min-height: 290px;
+  } */
+  .skillJob {
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  .skills {
+    padding: 0.2rem;
+    min-height: 460px;
+  }
+  .skills h3 {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+  }
+  .skillJobList {
+    gap: 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skillJob {
+    /* grid-template-columns: repeat(1, mixmax(0, 1fr));
+    gap: 2rem;
+    flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skills {
+    min-height: 420px;
+  }
+  .skillJobList {
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+
+  .skillAppList {
+    flex-wrap: wrap;
+    gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skillAppList li {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container h1 {
+    font-size: 2.5rem;
+  }
+
+  .skillJob {
+    width: 80%;
+  }
+
+  .skills {
+    min-height: 380px;
+  }
+  .skillJobList {
+    line-height: 1.3rem;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  .skillJobList li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.7rem;
+  }
+
+  .skillJobList li img {
+    width: 25%;
+    padding: 0;
+  }
+
+  .skillAppList {
+    flex-wrap: wrap;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skillAppList li {
+    font-size: 0.7rem;
+  }
+
+  .listButton {
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+  }
 }

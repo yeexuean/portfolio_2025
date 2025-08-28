@@ -43,6 +43,16 @@
   text-decoration: none;
 }
 
+.menuItems a:hover {
+  color: rgb(var(--color-primary));
+}
+
+@media screen and (max-width: 1024px) {
+  .menuItems {
+    gap: 5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;

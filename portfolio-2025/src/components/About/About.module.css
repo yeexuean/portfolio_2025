@@ -1,9 +1,11 @@
 @import "../../vars.css";
 
 .container {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 2rem;
+  min-height: 100svh;
 }
 
 .content {
@@ -15,24 +17,47 @@
 
 .content h1 {
   font-family: var(--font-serif);
-  color: var(--color-text);
   font-style: italic;
   font-size: 5rem;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-light)),
+    rgb(var(--color-primary))
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
 }
 
 .content h1 span {
+  display: inline;
   font-family: var(--font-sans-serif);
   font-style: normal;
 }
 
 .about {
-  margin: 3rem 25rem;
-  margin-bottom: 20rem;
+  margin: 3rem 0;
   font-family: var(--font-sans-serif);
   font-size: 1.2rem;
   color: var(--color-text);
+  max-width: 100ch;
   line-height: 3rem;
   text-align: center;
+  padding: 0rem 2rem;
+}
+
+.about span {
+  position: relative;
+  /* display: inline-block; */
+  padding: 0.2em 0.8em 0.2em 0.8em;
+  font-family: var(--font-sans-serif);
+  background: green;
+  transform: skewX(-10deg);
+  transform-origin: left top;
+  line-height: 1.4;
+  margin-left: 0.6rem;
 }
 
 .blur {
@@ -50,4 +75,54 @@
   );
   filter: blur(300px);
   z-index: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .content h1 {
+    font-size: 3.5rem;
+    align-items: center;
+  }
+
+  .about {
+    max-width: 70ch;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 2.5rem;
+    align-items: center;
+  }
+
+  .content h1 span {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .about {
+    max-width: 60ch;
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .content h1 {
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  .content h1 span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .about {
+    max-width: 60ch;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+  }
 }

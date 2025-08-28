@@ -113,3 +113,15 @@
 .panelLink:hover {
   background-color: rgba(100, 100, 100, 0.4);
 }
+
+@media screen and (max-width: 1024px) {
+  .projectPanel {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectPanel {
+    margin-bottom: 0rem;
+  }
+}
